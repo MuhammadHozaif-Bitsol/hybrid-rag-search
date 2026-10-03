@@ -1,0 +1,19 @@
+# Secrets: keep every env file out of git, except the template
+.env
+.env.*
+*.env
+.envrc
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Tools
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Claude Code: personal overrides (the shared .claude/settings.json is committed)
+.claude/settings.local.json
